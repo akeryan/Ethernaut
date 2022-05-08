@@ -9,7 +9,7 @@ abstract contract  Telephone {
 contract AttackTelephone {
     Telephone tel;
 
-    constructor (address _tel) {
+    constructor (address _tel) { //_tel is the address of the deployed instance of the Telephone contract
         tel = Telephone(_tel);
     }
     
