@@ -1,4 +1,4 @@
-contribute() function is misleading because you may think that in order to get ownership of the contract you are supposed to have more contributions than that of the initial owner (1000 ether). Well, you may try, however there is a easier way.
+contribute() function is misleading because you may think that in order to get ownership of the contract you are supposed to have more contributions than that of the initial owner (1000 ether). Well, you may try, however there is an easier way.
 
 Pay attantion to the receive() function, which is a fallback function. It will make you an owner if the require conditions are met. 
 (You can learn more about fallback functions here: https://github.com/ethereumbook/ethereumbook/blob/develop/06transactions.asciidoc)
